@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-olive: #909000;
+    --color-silver: #C0C0C0;
+    --color-golden: #c9ab00;
+    --font-sans: sans-serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-silver);
+    color: var(--color-olive);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 21px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 52px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.task-input {
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--color-golden);
+    color: var(--color-golden);
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.task-button {
+    background-color: var(--color-golden);
+    border: none;
+    padding-inline: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    margin-left: 220px;
+}
+
+.task-button:disabled {
+    cursor: default;
+    opacity: .5;
+}
+.card {
+    border: 1px solid var(--color-olive);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--color-golden);
+    color: var(--color-olive);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Добавить событие</h2>
+        <div class="task-form">
+            <p>Название события</p>
+            <input onchange="checkInput()" type="text" class="task-input" id="event-name">
+            <p>Дата события</p>
+            <input onchange="checkInput()" type="date" class="task-input" id="event-date">
+            <p>Описание события</p>
+            <input onchange="checkInput()" type="text" class="task-input" id="event-description">
+            <p>Место события</p>
+            <input onchange="checkInput()" type="text" class="task-input" id="event-place">
+            <p>Изображение события</p>
+            <input onchange="checkInput()" type="file" class="image" id="event-image">
+            <button onclick="addEvent()" class="task-button" id="taskBtn" disabled>Добавить</button>
+        </div>
+        <div class="request-list" id="requestList"></div>
+    </div>
+</body>
+</html>
